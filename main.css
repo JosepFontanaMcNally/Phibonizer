@@ -1,0 +1,82 @@
+body {
+    margin: 0px;
+    font-family: 'Avenir';
+}
+
+#backgroundDiv {
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundDiv::before
+{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ce/Greek_letter_lowercase_Phi.png');
+  background-repeat: repeat;
+  background-size: 2% 2%;
+  opacity: 0.2;
+  transform: rotate(30deg);
+}
+
+.containerClosed {
+    top: -15%;
+    width: 15%;
+    height: 30%;
+}
+
+.containerOpened {
+    width: 65%;
+    height: 80%;
+
+}
+
+#presentContainer {
+  margin: 0px;
+  background-color: transparent;
+  position: relative;
+  border: 10px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cliply.co/wp-content/uploads/2019/12/371912160_CHRISTMAS_PRESENT_400px.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#imgPresent {
+    width: 100%;
+    height: 100%;
+}
+
+.textClosed {
+    display: none;
+}
+
+.textOpen {
+  position: relative;
+  padding: 15px;
+  background-color: white;
+  border: 10px solid black;
+  border-radius: 10px;
+  margin-top: 10px;
+}
